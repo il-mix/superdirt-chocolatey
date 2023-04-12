@@ -1,8 +1,6 @@
 ﻿$packageName= 'superdirt'
 
-# write new paths for SuperCollider, Pulsar and Pulsar apm 
-#   then load machine and user path values 
-
+# write new paths for SuperCollider then load machine and user path values 
 
 $scPath = Get-AppInstallLocation SuperCollider
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") + ";" + $scPath
@@ -16,4 +14,4 @@ cd $scpath
 .\sclang $quarkinstall_path
 
 Write-Host "If SuperDirt or other Quarks didn't install properly, you can install them in the SuperCollider IDE."
-Write-Host "See User Docs install page for details.`n"
+Write-Host "See User Docs install page for details."
