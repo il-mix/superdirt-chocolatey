@@ -1,1 +1,4 @@
-
+SuperCollider implementation of the Dirt sampler, originally designed for the TidalCycles environment.
+The package's install script (chocolateyinstall.ps1) will run quarkinstall.sc script inside SuperCollider.
+The script will install SuperDirt with the dirt sample library and Vowel quark, as described in 
+https://tidalcycles.org/docs/getting-started/windows_install#superdirt
