@@ -5,13 +5,10 @@
 $scPath = Get-AppInstallLocation SuperCollider
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") + ";" + $scPath
 
-### install SuperDirt
+### uninstall SuperDirt
 Write-Host "Supercollider path: " $scPath
 $ChocolateyPackagePath = Get-ChocolateyPath -PathType 'PackagePath'
-$quarkinstall_path = $ChocolateyPackagePath + '\tools\superdirt_install.scd'
-Write-Host 'Installing SuperDirt sound synth and sample library. This may take time.'
+$quarkuninstall_path = $ChocolateyPackagePath + '\tools\superdirt_uninstall.scd'
+Write-Host 'Uninstalling SuperDirt sound synth and sample library. This may take time.'
 cd $scpath
-.\sclang $quarkinstall_path
-
-Write-Host "If SuperDirt or other Quarks didn't install properly, you can install them in the SuperCollider IDE."
-Write-Host "See User Docs install page for details."
+.\sclang $quarkuninstall_path
