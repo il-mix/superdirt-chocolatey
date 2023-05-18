@@ -1,4 +1,30 @@
-SuperCollider implementation of the Dirt sampler, originally designed for the TidalCycles environment.
-The package's install script (chocolateyinstall.ps1) will run quarkinstall.sc script inside SuperCollider.
-The script will install SuperDirt with the dirt sample library and Vowel quark, as described in 
-https://tidalcycles.org/docs/getting-started/windows_install#superdirt
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+SuperDirt is the SuperCollider implementation of the Dirt sampler, originally designed for the TidalCycles environment.
+
+The package's install script (chocolateyinstall.ps1) will run superdirt_install.scd script inside SuperCollider.
+The script will install SuperDirt from SuperCollider official repo <https://github.com/supercollider-quarks/quarks/blob/master/directory.txt>.
+
+The package provides an uninstall script (chocolateyuninstall.ps1). Like the install procedure, the uninstall script will run superdirt_uninstall.scd script inside SuperCollider.
+The script will uninstall SuperDirt from SuperCollider.
+
+To verify the install/uninstall script:
+
+1. Get the checksum of the *.scd siles using one of the following methods:
+- Using powershell function 'Get-FileHash'
+- Use chocolatey utility 'checksum.exe'
+- Using Windows' certUtil utility
+
+2. Verify that the checksums match the following:
+- file: superdirt_install.scd
+  - checksum type: sha 256
+  - checksum: 85F916D3648C526D33AA54873603857FFE6DDDE7E5A553ADFED6390449586DDD
+- file: superdirt_uninstall.scd
+  - checksum type: sha 256
+  - checksum: A95B8A1C67B96DB7C547D5CFB36DE7F1E7B28A75C24C9DAC1E2C89B6F5857523
+
+
+The file 'LICENSE.txt' has been obtained from <https://github.com/musikinformatik/SuperDirt/blob/master/LICENSE>
