@@ -7,7 +7,7 @@ in verifying that this package's contents are trustworthy.
 
 To verify the install/uninstall script:
 
-1. Get the checksum of the *.scd siles using one of the following methods:
+1. Get the checksum of the *.scd files using one of the following methods:
 - Using powershell function 'Get-FileHash'
 - Use chocolatey utility 'checksum.exe'
 - Using Windows' certUtil utility
