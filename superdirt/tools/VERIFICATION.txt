@@ -3,13 +3,7 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-SuperDirt is the SuperCollider implementation of the Dirt sampler, originally designed for the TidalCycles environment.
-
-The package's install script (chocolateyinstall.ps1) will run superdirt_install.scd script inside SuperCollider.
-The script will install SuperDirt from SuperCollider official repo <https://github.com/supercollider-quarks/quarks/blob/master/directory.txt>.
-
-The package provides an uninstall script (chocolateyuninstall.ps1). Like the install procedure, the uninstall script will run superdirt_uninstall.scd script inside SuperCollider.
-The script will uninstall SuperDirt from SuperCollider.
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To verify the install/uninstall script:
 
@@ -28,3 +22,13 @@ To verify the install/uninstall script:
 
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/musikinformatik/SuperDirt/blob/master/LICENSE>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SuperDirt is the SuperCollider implementation of the Dirt sampler, originally designed for the TidalCycles environment.
+
+The package's install script (chocolateyinstall.ps1) will run superdirt_install.scd script inside SuperCollider.
+The script will install SuperDirt from SuperCollider official repo <https://github.com/supercollider-quarks/quarks/blob/master/directory.txt>.
+
+The package provides an uninstall script (chocolateyuninstall.ps1). Like the install procedure, the uninstall script will run superdirt_uninstall.scd script inside SuperCollider.
+The script will uninstall SuperDirt from SuperCollider.
