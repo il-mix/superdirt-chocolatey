@@ -20,6 +20,7 @@ To verify the install/uninstall script:
   - checksum type: sha 256
   - checksum: A95B8A1C67B96DB7C547D5CFB36DE7F1E7B28A75C24C9DAC1E2C89B6F5857523
 
+The original scripts are stored in the package's source repository <https://github.com/il-mix/superdirt-chocolatey>
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/musikinformatik/SuperDirt/blob/master/LICENSE>
 
