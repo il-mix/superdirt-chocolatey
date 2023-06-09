@@ -5,6 +5,11 @@
 $scPath = Get-AppInstallLocation SuperCollider
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") + ";" + $scPath
 
+if (!$scPath) { 
+  Write-Host "SuperCollider not found. Must be installed to install SuperDirt plugin" 
+  exit -1
+}
+
 ### install SuperDirt
 Write-Host "Supercollider path: " $scPath
 $ChocolateyPackagePath = Get-ChocolateyPath -PathType 'PackagePath'

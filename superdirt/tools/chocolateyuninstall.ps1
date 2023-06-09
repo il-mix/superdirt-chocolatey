@@ -5,6 +5,11 @@
 $scPath = Get-AppInstallLocation SuperCollider
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") + ";" + $scPath
 
+if (!$scPath) { 
+  Write-Host "SuperCollider already uninstalled. No need to uninstall SuperDirt plugin" 
+  exit 0
+}
+
 ### uninstall SuperDirt
 Write-Host "Supercollider path: " $scPath
 $ChocolateyPackagePath = Get-ChocolateyPath -PathType 'PackagePath'
